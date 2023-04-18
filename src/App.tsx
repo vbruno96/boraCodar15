@@ -73,8 +73,8 @@ const plans = [
 
 export function App() {
   return (
-    <div className="grid place-content-center bg-gray-50 w-screen h-screen">
-      <div className="flex justify-center gap-8 max-w-screen-2xl">
+    <div className="grid place-content-center bg-gray-50 w-screen h-full lg:h-screen">
+      <div className="flex flex-col lg:flex-row justify-center items-stretch gap-8 lg:gap-4 xl:gap-8 max-w-screen-2xl py-20 lg:py-0 px-5 lg:px-0">
         {plans.map((plan) => (
           <BoxCard key={plan.id} plan={plan} />
         ))}
