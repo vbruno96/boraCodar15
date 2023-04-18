@@ -2,7 +2,11 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      letterSpacing: {
+        wide: '.06em',
+      },
+    },
     colors: {
       gray: {
         50: '#F8FAFC',
@@ -31,9 +35,11 @@ export default {
       sans: ['Titillium Web', 'sans-serif'],
     },
     fontSize: {
+      xs: ['0.75rem', '1.125rem'],
       sm: ['0.875rem', '1.25'],
       base: ['1rem', '1.5rem'],
-      lg: ['1.125rem', '1.625rem'],
+      md: ['1.125rem', '1.625rem'],
+      lg: ['1.5rem', '2.25rem'],
       xl: ['2rem', '3rem'],
     },
   },
